@@ -3,9 +3,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="Lobby/LobbyScene.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="MainScene.csd" />
+        <ActiveDocument Path="Lobby/LobbyScene.csd" />
       </Value>
     </Item>
     <Item Key="CocosRecentOperation">
