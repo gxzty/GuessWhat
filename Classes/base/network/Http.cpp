@@ -47,30 +47,37 @@ void Http::onHttpRequestCompleted(HttpClient *sender, HttpResponse *response) {
     string strTag;
     rapidjson::Document document;
     ON_HTTP_COMPLET_CHECK(strTag, document);
+    int _flag = 1; // 0 : ³É¹¦, 1 : Ê§°Ü
     CCLOG("tag: %s", strTag.c_str());
     if (strTag == "LOGIN_login") {
         if (document.IsArray() && !document.Empty() &&
             document[0].HasMember("account") && document[0].HasMember("password")) {
-            CCLOG("loginOK");
+            _flag = 0;
             PlayerVO::szNickName = document[0]["nickName"].GetString();
-            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent(strTag, nullptr);
-        } else {
-            CCLOG("Wrong");
         }
     } else if (strTag == "LOGIN_regit") {
         if (document.IsArray() && !document.Empty() &&
             document[0].HasMember("account") && document[0].HasMember("password")) {
-            CCLOG("loginOK");
+            _flag = 0;
             PlayerVO::szNickName = document[0]["nickName"].GetString();
-            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent("LOGIN_regit_0", nullptr);
-        } else {
-            Director::getInstance()->getEventDispatcher()->dispatchCustomEvent("LOGIN_regit_1", nullptr);
         }
+    } else if (strTag == "") {
+
     }
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     else {
         CCLOG("have no tag: %s", strTag.c_str());
+        return;
     }
+    DISPATCH_CUSTOM_EVENT(__String::createWithFormat("%s_%d", strTag.c_str(),_flag)->getCString());
 }
-//response->getHttpRequest()->autorelease();

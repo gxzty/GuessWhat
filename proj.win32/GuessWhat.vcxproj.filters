@@ -22,6 +22,9 @@
     <Filter Include="src\base\macro">
       <UniqueIdentifier>{8bbdd81c-d918-4874-a9e7-f45ee9417201}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\base\network\ODSocket">
+      <UniqueIdentifier>{918f3432-ee0b-4647-b64f-cddf75e139ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\LoginScene.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\network\ODSocket\ODSocket.cpp">
+      <Filter>src\base\network\ODSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\network\ODSocket\stdafx.cpp">
+      <Filter>src\base\network\ODSocket</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +67,21 @@
     </ClInclude>
     <ClInclude Include="..\Classes\base\macro\mHttp.h">
       <Filter>src\base\macro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\macro\mMisc.h">
+      <Filter>src\base\macro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\network\ODSocket\ODSocket.h">
+      <Filter>src\base\network\ODSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\network\ODSocket\stdafx.h">
+      <Filter>src\base\network\ODSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\network\ODSocket\targetver.h">
+      <Filter>src\base\network\ODSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\network\ODSocket\tchar.h">
+      <Filter>src\base\network\ODSocket</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

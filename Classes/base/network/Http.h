@@ -2,6 +2,7 @@
 #include "cocos2d.h"
 #include "../macro/Define.h"
 #include "../macro/mHttp.h"
+#include "../macro/mMisc.h"
 #include "./json/document.h"
 
 using namespace std;

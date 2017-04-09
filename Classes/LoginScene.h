@@ -1,6 +1,7 @@
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
 #include "./base/macro/Define.h"
+#include "./base/network/ODSocket/ODSocket.h"
 
 USING_NS_CC;
 using namespace cocos2d::ui;
@@ -22,6 +23,10 @@ private:
     Button* regitBtn;
     Button* loginBtn;
     void loginSusses(Ref*);
+    void loginFailed(Ref*);
     void regitSusses(Ref*);
+    void regitFailed(Ref*);
+    void receiveData();
+    ODSocket socket;
 };
 
