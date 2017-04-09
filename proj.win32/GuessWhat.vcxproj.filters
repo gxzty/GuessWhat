@@ -10,6 +10,18 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{49ef1718-dc04-463c-bdfe-3208ff555253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\network">
+      <UniqueIdentifier>{915ee352-7f10-43dc-a0fd-7ab36be8b223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\manager">
+      <UniqueIdentifier>{f8302f4d-1469-4682-9e68-08c9b128d8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\macro">
+      <UniqueIdentifier>{8bbdd81c-d918-4874-a9e7-f45ee9417201}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,7 +30,10 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\LobbyScene.cpp">
+    <ClCompile Include="..\Classes\base\network\Http.cpp">
+      <Filter>src\base\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoginScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,8 +44,20 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\LobbyScene.h">
+    <ClInclude Include="..\Classes\base\network\Http.h">
+      <Filter>src\base\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoginScene.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\macro\mButton.h">
+      <Filter>src\base\macro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\macro\Define.h">
+      <Filter>src\base\macro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\macro\mHttp.h">
+      <Filter>src\base\macro</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -3,8 +3,9 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Folder Name="Lobby">
-          <Project Name="LobbyScene.csd" Type="Scene" />
+        <Folder Name="Login">
+          <Project Name="LoginScene.csd" Type="Scene" />
+          <Folder Name="img" />
         </Folder>
       </RootFolder>
     </Group>
