@@ -145,9 +145,12 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\base\misc\GlobalNode.cpp" />
+    <ClCompile Include="..\Classes\base\misc\MyActions.cpp" />
     <ClCompile Include="..\Classes\base\network\Http.cpp" />
     <ClCompile Include="..\Classes\base\network\ODSocket\ODSocket.cpp" />
     <ClCompile Include="..\Classes\base\network\ODSocket\stdafx.cpp" />
+    <ClCompile Include="..\Classes\base\tips\Tips.cpp" />
     <ClCompile Include="..\Classes\LoginScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -157,11 +160,15 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\base\macro\mButton.h" />
     <ClInclude Include="..\Classes\base\macro\mHttp.h" />
     <ClInclude Include="..\Classes\base\macro\mMisc.h" />
+    <ClInclude Include="..\Classes\base\misc\GlobalNode.h" />
+    <ClInclude Include="..\Classes\base\misc\MyActions.h" />
+    <ClInclude Include="..\Classes\base\misc\MyMisc.h" />
     <ClInclude Include="..\Classes\base\network\Http.h" />
     <ClInclude Include="..\Classes\base\network\ODSocket\ODSocket.h" />
     <ClInclude Include="..\Classes\base\network\ODSocket\stdafx.h" />
     <ClInclude Include="..\Classes\base\network\ODSocket\targetver.h" />
     <ClInclude Include="..\Classes\base\network\ODSocket\tchar.h" />
+    <ClInclude Include="..\Classes\base\tips\Tips.h" />
     <ClInclude Include="..\Classes\LoginScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
@@ -179,6 +186,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\blur.fsh" />
+    <None Include="..\Resources\blur.vsh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

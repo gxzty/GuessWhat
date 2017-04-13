@@ -3,6 +3,7 @@
 #include "./base/macro/mButton.h"
 #include "./base/macro/mMisc.h"
 #include "./base/network/Http.h"
+#include "./base/tips/Tips.h"
 
 LoginScene* LoginScene::_instance = nullptr;
 
@@ -46,6 +47,7 @@ bool LoginScene::init() {
 
 
     INITBTN(regitBtn, loginNode, "regitBtn", [&](Ref*) {
+        Tips::show();
         std::string _url = "account";
         const char* __url = __String::createWithFormat(
             "%s%s",
@@ -63,7 +65,7 @@ bool LoginScene::init() {
         const char* __url = __String::createWithFormat("%s%s?account=%s&password=%s",
             SERVER_URL, _url.c_str(), accountText->getString().c_str(), passwordText->getString().c_str()
             )->getCString();
-        Http::getInstance()->sendHttpRequest(__url, HttpRequest::Type::GET,"LOGIN_login");
+        Http::getInstance()->sendHttpRequest(__url, HttpRequest::Type::GET, "LOGIN_login");
     });
     
     return true;
@@ -71,25 +73,26 @@ bool LoginScene::init() {
 
 void LoginScene::loginSusses(Ref*) {
     CCLOG("LoginSusses");
-    socket.Init();
-    socket.Create(AF_INET, SOCK_STREAM, 0);
 
-    const char* ip = "45.58.54.172";
-    int port = 1992;
-    bool result = socket.Connect(ip, port);
+    //socket.Init();
+    //socket.Create(AF_INET, SOCK_STREAM, 0);
 
-    // 发送数据 Send
-    socket.Send("login", 5);
+    //const char* ip = "45.58.54.172";
+    //int port = 1992;
+    //bool result = socket.Connect(ip, port);
 
-    if (result) {
-        CCLOG("connect to server success!");
-        // 开启新线程，在子线程中，接收数据
-        std::thread recvThread = std::thread(&LoginScene::receiveData, this);
-        recvThread.detach(); // 从主线程分离
-    } else {
-        CCLOG("can not connect to server");
-        return;
-    }
+    //// 发送数据 Send
+    //socket.Send("login", 5);
+
+    //if (result) {
+    //    CCLOG("connect to server success!");
+    //    // 开启新线程，在子线程中，接收数据
+    //    std::thread recvThread = std::thread(&LoginScene::receiveData, this);
+    //    recvThread.detach(); // 从主线程分离
+    //} else {
+    //    CCLOG("can not connect to server");
+    //    return;
+    //}
 
     nickNameText->setString(PlayerVO::szNickName);
 }

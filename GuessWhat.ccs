@@ -4,9 +4,17 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Folder Name="Login">
-          <Project Name="LoginScene.csd" Type="Scene" />
           <Folder Name="img" />
+          <Image Name="__forBlur.png" />
+          <Project Name="LoginScene.csd" Type="Scene" />
         </Folder>
+        <Folder Name="Shader">
+          <File Name="gray.fsh" />
+          <File Name="gray.vsh" />
+        </Folder>
+        <Image Name="1234.png" />
+        <Image Name="public_bg.png" />
+        <Project Name="Tips.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -9,14 +9,15 @@
           <AbstractNodeData Name="loginNode" ActionTag="329288481" Tag="3" IconVisible="True" RightMargin="1280.0000" TopMargin="720.0000" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
-              <AbstractNodeData Name="backGround" ActionTag="1823451524" Tag="12" IconVisible="False" LeftMargin="-3.5385" RightMargin="-1276.4614" TopMargin="-718.7140" BottomMargin="-1.2860" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="backGround" ActionTag="1823451524" Tag="12" IconVisible="False" RightMargin="-1280.0000" TopMargin="-720.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="374" RightEage="374" TopEage="211" BottomEage="211" Scale9OriginX="374" Scale9OriginY="211" Scale9Width="532" Scale9Height="298" ctype="PanelObjectData">
                 <Size X="1280.0000" Y="720.0000" />
                 <AnchorPoint />
-                <Position X="-3.5385" Y="-1.2860" />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="1234.png" Plist="" />
                 <SingleColor A="255" R="89" G="89" B="247" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />

@@ -4,8 +4,9 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="Login/LoginScene.csd" />
+          <FilePathData Path="Tips.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Login/LoginScene.csd" />
+        <ActiveDocument Path="Tips.csd" />
       </Value>
     </Item>
     <Item Key="CocosRecentOperation">

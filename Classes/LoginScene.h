@@ -27,6 +27,10 @@ private:
     void regitSusses(Ref*);
     void regitFailed(Ref*);
     void receiveData();
+    void sprAddGray(Sprite * sprite);
+    void sprRemoveGray(Sprite * sprite);
+    void capture(Ref* sender);
+    void afterCapture(bool succeed, const std::string& outputFile);
     ODSocket socket;
 };
 

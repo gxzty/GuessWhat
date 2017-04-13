@@ -16,14 +16,20 @@
     <Filter Include="src\base\network">
       <UniqueIdentifier>{915ee352-7f10-43dc-a0fd-7ab36be8b223}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\base\manager">
-      <UniqueIdentifier>{f8302f4d-1469-4682-9e68-08c9b128d8ef}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\base\macro">
       <UniqueIdentifier>{8bbdd81c-d918-4874-a9e7-f45ee9417201}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\base\network\ODSocket">
       <UniqueIdentifier>{918f3432-ee0b-4647-b64f-cddf75e139ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\tips">
+      <UniqueIdentifier>{df786469-328c-48d9-8b45-33a8e4843c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\misc">
+      <UniqueIdentifier>{f8302f4d-1469-4682-9e68-08c9b128d8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\shader">
+      <UniqueIdentifier>{7dbecfd1-8e70-46af-b3d3-0769731cf3d5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +50,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\base\network\ODSocket\stdafx.cpp">
       <Filter>src\base\network\ODSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\tips\Tips.cpp">
+      <Filter>src\base\tips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\misc\MyActions.cpp">
+      <Filter>src\base\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\misc\GlobalNode.cpp">
+      <Filter>src\base\misc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,10 +98,30 @@
     <ClInclude Include="..\Classes\base\network\ODSocket\tchar.h">
       <Filter>src\base\network\ODSocket</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\base\tips\Tips.h">
+      <Filter>src\base\tips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\misc\MyActions.h">
+      <Filter>src\base\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\misc\GlobalNode.h">
+      <Filter>src\base\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\misc\MyMisc.h">
+      <Filter>src\base\misc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\blur.fsh">
+      <Filter>src\shader</Filter>
+    </None>
+    <None Include="..\Resources\blur.vsh">
+      <Filter>src\shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
